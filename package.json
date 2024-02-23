@@ -1,0 +1,19 @@
+{
+  "name": "cypresstraining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "D:\\CypressTraining\\node_modules\\.bin\\cypress run",
+    "headtest": "npm run test -- --headed",
+    "chrometest": "npm run test -- --headed --browser chrome",
+    "edgetest": "npm run test -- --headed --browser edge",
+    "recordtest":"npm run test -- --headed --browser chrome --record --key 30c2d591-bbd9-4c14-ad9b-dde9ab813122 "
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.4"
+  }
+}
