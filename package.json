@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "D:\\CypressTraining\\node_modules\\.bin\\cypress run",
+    "test": "cypress run",
     "headtest": "npm run test -- --headed",
     "chrometest": "npm run test -- --headed --browser chrome",
     "edgetest": "npm run test -- --headed --browser edge",
@@ -13,7 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.4",
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "cypress": "^13.15.2",
     "multiple-cucumber-html-reporter": "^3.6.2"
   },
   "cypress-cucumber-preprocessor": {
@@ -23,8 +25,6 @@
     }
   },
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
-    "@cypress/browserify-preprocessor": "latest",
-    "cypress": "latest"
+    "@cypress/browserify-preprocessor": "latest"
   }
 }
